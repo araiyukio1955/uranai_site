@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)file:///C:/Users/a/Downloads/%E5%8D%A0%E3%81%84%E5%B8%AB%EF%BC%91%EF%BC%90%EF%BC%92%EF%BC%90.html -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>月詠｜占い鑑定書生成ツール</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#111327;color:#f0edf6;font:16px/1.8 system-ui,sans-serif}header{max-width:1300px;margin:auto;padding:30px 24px}h1{margin:0;color:#e2c98e;font-family:serif;font-size:30px}header p{margin:5px 0;color:#c3bdd4}main{max-width:1300px;margin:auto;padding:0 24px 50px;display:grid;grid-template-columns:370px minmax(0,1fr);gap:24px}.panel{background:#212039;padding:24px;border:1px solid #49405f;border-radius:16px}label{display:block;margin:14px 0 5px;font-weight:600}input,select,textarea{width:100%;border:1px solid #777087;background:#14162b;color:#fff;padding:11px;border-radius:7px;font:inherit}textarea{min-height:100px;resize:vertical}input:focus,select:focus,textarea:focus,button:focus-visible{outline:3px solid #c7a2ef;outline-offset:2px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}button{border:1px solid #8a779f;border-radius:8px;padding:11px 16px;font:inherit;color:#fff;background:#39304d;cursor:pointer}button.primary{background:#dcc18a;color:#201b30;font-weight:bold;width:100%;margin-top:22px}button:disabled{opacity:.45;cursor:not-allowed}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}.small{font-size:13px;color:#c5bfd3}.check{display:flex;align-items:flex-start;gap:10px;font-size:14px}.check input{width:20px;margin-top:6px}.paper{--accent:#806633;background:#fffdf8;color:#302a37;border:double 6px #baa273;padding:40px;box-shadow:0 15px 45px #0003;overflow-wrap:anywhere;min-height:600px}.paper h2{text-align:center;color:var(--accent);font-family:serif;font-size:28px;line-height:1.5}.paper h3{color:var(--accent);font-size:17px;border-bottom:1px solid #d8cdb8;padding-bottom:6px;break-after:avoid}.paper p{white-space:pre-wrap;orphans:3;widows:3}.paper .seal{text-align:center;letter-spacing:5px;font-size:13px;color:var(--accent)}.paper footer{font-size:12px;border-top:1px solid #ddd;padding-top:15px}.paper.simple{border:1px solid #ddd;--accent:#424052}.paper.japanese{background:#faf5e9;--accent:#625447;font-family:serif;border:double 6px #958367}.paper.mystic{background:#f3eefb;--accent:#654083;border-color:#9a7db9}.paper.luxury{background:#fffdf6;--accent:#806633}.edit{margin-top:20px}.edit summary{cursor:pointer;color:#e2c98e}.edit textarea{min-height:140px}#status{min-height:28px;color:#f1d296}#empty{text-align:center;padding:90px 0;color:#756d80}[hidden]{display:none!important}@media(max-width:850px){main{grid-template-columns:1fr;padding:0 14px 30px}header{padding:24px 14px}.paper{padding:24px}.panel{padding:20px}}@page{size:A4;margin:17mm}@media print{body{background:#fff;color:#222}header,.panel,.toolbar,.check,.small,#status,.edit{display:none!important}main{display:block;padding:0;margin:0;max-width:none}.paper{box-shadow:none;min-height:0;padding:15px;border-width:2px;print-color-adjust:exact;-webkit-print-color-adjust:exact}.paper h2{font-size:24px}.paper p{font-size:11pt;line-height:1.9}}
+</style>
+</head><body><header><h1>☾ 月詠 — 鑑定書アトリエ</h1><p>想いを受け止め、次の一歩を言葉に。</p></header>
+<main>
+<form id="form" class="panel">
+<b>01 ／ ご相談を入力</b>
+<p class="small">API不要・端末内で動作。入力は外部送信も自動保存もしません。閉じると消えるため、必要な文章はコピーしてください。</p>
+<label for="name">相談者名（任意・ニックネーム可）</label><input id="name" maxlength="40" placeholder="例：さくら">
+<label for="genre">相談ジャンル</label><select id="genre"><option>恋愛</option><option>復縁</option><option>仕事</option><option>人間関係</option><option>金運</option><option>将来の不安</option><option>その他</option></select>
+<label for="question">相談内容（必須）</label><textarea id="question" required="" maxlength="2000" placeholder="いちばん気になっていることをご記入ください"></textarea>
+<label for="situation">相談者の状況</label><textarea id="situation" maxlength="1500" placeholder="現在の状況や、これまでの経緯"></textarea>
+<label for="relation">相手との関係性（いる場合）</label><input id="relation" maxlength="200" placeholder="例：元交際相手、職場の同僚">
+<div class="row"><div><label for="tone">鑑定のトーン</label><select id="tone"><option>やさしい</option><option>前向き</option><option>落ち着いた</option><option>神秘的</option><option>はっきりめ</option></select></div><div><label for="length">文字量</label><select id="length"><option>短め</option><option selected="">標準</option><option>長め</option></select></div></div>
+<label for="design">鑑定書デザイン</label><select id="design"><option value="simple">シンプル</option><option value="japanese">和風</option><option value="mystic">神秘的</option><option value="luxury" selected="">高級感</option></select>
+<button class="primary" type="submit">✦ 鑑定書を生成する</button>
+<p class="small">定型文による作成補助です。カード抽選・生年月日計算・霊視・AIによる個別判断は行いません。鑑定者が内容を確認・編集してご利用ください。</p>
+</form>
+<div>
+<div class="toolbar"><button id="copy" disabled="">全文コピー</button><button id="print" disabled="">印刷 / PDF保存</button></div>
+<label class="check"><input type="checkbox" id="review" disabled=""><span>内容・個人情報・断定表現を確認し、納品用に整えました。</span></label>
+<p id="status" role="status" aria-live="polite">入力して生成すると、こちらに鑑定書が表示されます。</p>
+<article id="paper" class="paper luxury"><div id="empty">☾<br>あなたの言葉で、心に寄り添う一通を。</div></article>
+<details id="editor" class="edit" hidden=""><summary>02 ／ 文章を編集する</summary><p class="small">編集は表示とコピー用テキストへ反映されます。入力を変えて再生成すると編集内容は置き換わります。</p><div id="fields"></div></details>
+<details id="textPanel" class="edit" hidden=""><summary>コピー用テキストを表示</summary><textarea id="plain" aria-label="コピー用テキスト" readonly=""></textarea></details>
+</div>
+</main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id);
+const headings=['鑑定書タイトル','相談内容の要約','現在の状況の読み解き','鑑定結果','今後のアドバイス','相談者への最後のメッセージ'];
+const themes={
+ '恋愛':['心地よい距離を育てる','相手の反応が気になるときほど、ご自身の心地よさも大切な判断材料になります。','相手の気持ちはこの文章からは確定できません。無理のない会話を重ね、言葉と行動の両方を見ていくことが、関係を考える助けになります。','返事を急かさず、負担の少ない話題を一つ選びましょう。ご自身ばかりが我慢していないかも振り返ってみてください。'],
+ '復縁':['過去をほどき、これからを選ぶ','過去を大切に思う気持ちと、今の生活を守ることは両立できます。','復縁の可否や時期、相手の本心を断定することはできません。再び関わるかどうかは、別れの背景と双方の意思を尊重して考えることが大切です。','別れの理由と、同じことを繰り返さないために変えられる点を書き出しましょう。連絡を望まれていない場合は、その意思と距離を尊重してください。'],
+ '仕事':['自分らしい働き方への一歩','周囲の期待とご自身の希望を分けてみると、負担や課題を整理しやすくなります。','成果や転職の成否を保証することはできません。大きな決断の前に、得意なこと・続けたいこと・負担になっていることを比べると、選択の軸が見えやすくなります。','今週取り組める小さな課題を一つ決めましょう。働き方を変える場合は、条件や生活への影響を確認する時間も設けてください。'],
+ '人間関係':['心を守る、穏やかなつながり','関係を大切にすることと、ご自身の境界線を守ることは矛盾しません。','相手の意図を決めつけず、実際の言動とご自身の感じ方を分けることが、関わり方を見直す助けになります。すべての人に合わせる必要はありません。','負担に感じた場面と、望んでいる対応を書いてみましょう。伝える場合は「私はこう感じる」と、ご自身を主語にした短い言葉を選んでみてください。'],
+ '金運':['暮らしの安心を整える','お金への不安があるときは、目に見える情報を少しずつ整理することが助けになります。','金運の上昇や利益を保証することはできません。収入や支出を把握し、生活に必要なお金を守る視点が、落ち着いて選ぶための土台になります。','直近の支出を一つだけ確認し、必要なものと見直せるものを分けましょう。借入や投資などの判断は占いで決めず、具体的な条件と専門的な情報を確認してください。'],
+ '将来の不安':['見えない明日に、小さな灯りを','先が見えないときは、いくつもの心配を一度に抱え込みやすくなるものです。','将来は一つに決まっているものとして扱う必要はありません。今日できることと、今は判断できないことを分けると、選択の余地を取り戻しやすくなります。','心配事を紙に書き、今日できることに一つだけ印をつけましょう。決めなくてよいことには、考え直す日を設けて一度休むことも選択肢です。'],
+ 'その他':['気持ちを整え、次の一歩へ','答えを急ぐ前に、何を大切にしたいかを確認する時間が役立つことがあります。','今の情報だけで結論を決めることはできません。選択肢を並べ、それぞれが日常に与える影響を確かめることで、ご自身に合う判断を探していけます。','変えられることと、ご自身だけでは変えられないことを分けましょう。そのうえで、無理なく試せる行動を一つ選んでみてください。']
+};
+const voices={
+ 'やさしい':['ここまでの想いを、ゆっくり受け止めていきましょう。','今のご自身を責めず、できる範囲の一歩を大切にしてください。'],
+ '前向き':['今できる小さな工夫から、次の選択を考えていきましょう。','小さな行動も、ご自身の選択を支える経験になります。'],
+ '落ち着いた':['事実と気持ちを分けながら、順に整理していきましょう。','結論を急がず、納得できる判断のための時間を取ってください。'],
+ '神秘的':['夜空の灯りをたどるように、心の中の願いを静かに見つめてみましょう。','心の灯りを大切に、ご自身の歩幅で進んでください。'],
+ 'はっきりめ':['まず、ご自身が選べることに目を向けましょう。','無理を重ねる必要はありません。ご自身の意思と安心を優先してください。']
+};
+const note='この鑑定書は、ご相談の整理と選択を支える参考文です。未来や相手の気持ち、成果を保証するものではありません。';
+let report=null,dirty=false;
+// API接続時はこの関数をasyncにして、ご自身のサーバーへPOSTします。
+// APIキーをHTMLに書かないでください。相談内容の外部送信は同意を得てください。
+// 応答は6項目の文字列配列として検証し、下の安全チェックと人の確認を通します。
+function generate(d){
+ const t=themes[d.genre],v=voices[d.tone],level=['短め','標準','長め'].indexOf(d.length);
+ const clip=s=>s.length>150?s.slice(0,150)+'…':s;
+ const summary=`${d.genre}についてのご相談です。\nご相談の要点（ご本人の記述から抜粋）：${clip(d.question)}`;
+ const context=[d.situation&&'現在の状況（ご申告）：'+clip(d.situation),d.relation&&'相手との関係（ご申告）：'+clip(d.relation)].filter(Boolean).join('\n');
+ let result=[t[0]+' — '+d.genre+'の鑑定書',summary,(context?context+'\n\n':'')+v[0]+t[1],t[2],t[3],v[1]];
+ if(level>=1){result[3]+='ご自身が望むことと、現実に確認できていることを並べてみてください。答えが出ない部分は、今は保留にしてもかまいません。';result[4]+='試した後は、気持ちや負担がどう変わったかを振り返り、合わなければ方法を変えていきましょう。';result[5]+='相談してくださった想いを大切にしながら、ご自身が納得できる道を選んでいただければと思います。';}
+ if(level===2){result[2]+='気になる出来事があったときは、「起きた事実」「自分が受け取った意味」「本当は望んでいること」の三つに分けてみてください。気持ちを否定せずに整理すると、確認が必要なことも見つけやすくなります。';result[3]+='判断に迷うときは、選択した場合と見送った場合の両方を考え、それぞれの負担や大切にできるものを比べる方法もあります。周囲の期待だけで決めず、ご自身の生活や安心に合っているかを確かめてください。';result[4]+='行動の目標は、他者を変えることではなく、ご自身が実行できる範囲に置くと振り返りやすくなります。一人で整理することが難しければ、信頼できる人に話し、別の視点を借りることもできます。';}
+ const source=d.question+d.situation+d.relation;
+ if(/病|医療|治療|妊娠|出産|寿命|余命|法律|裁判|訴訟|投資|株|借金/.test(source))result[3]+='\n\n医療・妊娠・寿命・法律・投資に関する結論は、占いでは判断できません。必要に応じて医療機関や該当分野の専門家に確認し、この文章は気持ちの整理に限ってお役立てください。';
+ return result;
+}
+// 簡易検出です。言い換えや専門的な断定を網羅できないため、人の確認が必要です。
+function unsafe(s){return /絶対|必ず|手遅れ|不幸にな|追加鑑定|依存させ|確実に|100[%％]|治ります|妊娠します|死にます|儲かります/.test(s.normalize('NFKC').replace(/\s/g,''));}
+function plainText(){return [report.name?report.name+' 様':'',...report.parts.map((s,i)=>i?'【'+headings[i]+'】\n'+s:s),note].filter(Boolean).join('\n\n');}
+function eligibility(){const bad=report&&unsafe(plainText());const allowed=report&&!bad&&!dirty&&$('review').checked;$('copy').disabled=!allowed;$('print').disabled=!allowed;return bad;}
+function render(){
+ const p=$('paper');p.replaceChildren();p.className='paper '+$('design').value;
+ const seal=document.createElement('div');seal.className='seal';seal.textContent='月 詠  ·  鑑 定 書';p.append(seal);
+ report.parts.forEach((s,i)=>{if(i===0){const h=document.createElement('h2');h.textContent=s;p.append(h);if(report.name){const n=document.createElement('p');n.textContent=report.name+' 様';p.append(n);}}else{const sec=document.createElement('section'),h=document.createElement('h3'),body=document.createElement('p');h.textContent=headings[i];body.textContent=s;sec.append(h,body);p.append(sec);}});
+ const f=document.createElement('footer');f.textContent=note;p.append(f);$('plain').value=plainText();
+ const bad=eligibility();$('status').textContent=bad?'断定・不安を煽る可能性のある表現を検出しました。相談内容の引用も含めて編集してください。':`生成文 ${Array.from(plainText()).length}文字。文章を編集・確認して、確認欄にチェックしてください。`;
+}
+$('form').addEventListener('submit',e=>{e.preventDefault();if(!$('question').value.trim()){ $('question').setCustomValidity('相談内容を入力してください。');$('question').reportValidity();return;}if(report&&!confirm('現在の鑑定書を新しい文章に置き換えますか？'))return;
+ const d={};for(const id of ['name','genre','question','situation','relation','tone','length'])d[id]=$(id).value.trim();report={name:d.name,parts:generate(d)};dirty=false;$('review').disabled=false;$('review').checked=false;$('fields').replaceChildren();report.parts.forEach((s,i)=>{const l=document.createElement('label'),t=document.createElement('textarea');t.id='edit'+i;l.htmlFor=t.id;l.textContent=headings[i];t.value=s;t.addEventListener('input',()=>{report.parts[i]=t.value;$('review').checked=false;render();});$('fields').append(l,t);});$('editor').hidden=false;$('textPanel').hidden=false;render();});
+$('form').addEventListener('input',e=>{ $('question').setCustomValidity('');if(e.target.id==='design')return;if(report){dirty=true;$('review').checked=false;eligibility();$('status').textContent='入力が変更されています。再生成すると新しい内容が反映されます。';}});
+$('design').addEventListener('change',()=>{$('paper').className='paper '+$('design').value;});
+$('review').addEventListener('change',()=>{eligibility();});
+$('copy').addEventListener('click',async()=>{if(!report||eligibility()||dirty||!$('review').checked)return;try{if(!navigator.clipboard)throw Error();await navigator.clipboard.writeText(plainText());$('status').textContent='全文をコピーしました。';}catch{ $('textPanel').open=true;$('plain').focus();$('plain').select();$('status').textContent='自動コピーが使えないため全文を選択しました。Ctrl+C（Macは⌘C）でコピーしてください。';}});
+$('print').addEventListener('click',()=>{if(report&&!eligibility()&&!dirty&&$('review').checked)window.print();});
+</script>
+
+</body></html>
