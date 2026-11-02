@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="無料で楽しむ占い鑑定書。恋愛・仕事・人間関係などの相談を入力して、自分だけのメッセージを受け取れます。">
+<title>星月の占い鑑定室｜無料鑑定書</title>
+<style>
+:root{--bg:#0e1028;--panel:#1c1d40;--line:#5c517d;--gold:#efd29a;--text:#f9f5ff;--muted:#c7c2d9;--purple:#7f65ac}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 12% 3%,#37315b 0,transparent 36%),linear-gradient(130deg,#0b122c,#1b1536 60%,#0b142b);color:var(--text);font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.8;min-height:100vh}button,input,textarea,select{font:inherit}a{color:var(--gold)}.wrap{max-width:1030px;margin:auto;padding:26px 18px 60px}.hero{text-align:center;padding:36px 12px 27px}.ornament{font-size:28px;color:var(--gold);letter-spacing:10px}.eyebrow{letter-spacing:3px;color:var(--gold);font-size:12px}h1{font-family:serif;font-size:clamp(28px,5vw,45px);letter-spacing:2px;margin:6px 0;color:var(--gold)}.lead{color:#e4dfef}.badge{display:inline-block;border:1px solid #927bba;border-radius:30px;padding:4px 16px;color:var(--gold);font-size:13px}.layout{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}.panel{background:rgba(25,27,61,.91);border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 18px 45px #06061a55}h2{font-size:22px;color:var(--gold);font-family:serif;margin:0 0 15px}h3{color:var(--gold);font-size:17px;margin:20px 0 4px}label{display:block;font-weight:700;margin:15px 0 5px;color:#f1e9ff;font-size:14px}input,select,textarea{width:100%;background:#11152d;color:white;border:1px solid #71668f;border-radius:9px;padding:11px 12px;outline-offset:3px}textarea{resize:vertical;min-height:94px}input:focus,select:focus,textarea:focus{outline:2px solid #dabd84}small,.hint{color:var(--muted);font-size:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.btn{background:linear-gradient(135deg,#f8dfac,#be9258);color:#251933;border:none;border-radius:10px;padding:12px 20px;cursor:pointer;font-weight:800;min-height:46px}.btn.secondary{background:transparent;border:1px solid #a38cc6;color:#fff}.btn:disabled{opacity:.55;cursor:not-allowed}.btn:hover{filter:brightness(1.08)}.intro{border:1px dashed #86789f;border-radius:12px;padding:15px;color:#d7cfe5}.paper{background:#fcf9f2;color:#242035;border:7px double #b69b65;border-radius:8px;padding:24px;box-shadow:0 8px 25px #0003}.paper h2,.paper h3{color:#624783}.paper h2{text-align:center;margin-bottom:3px}.paper .seal{text-align:center;color:#8d6c3c;letter-spacing:5px}.paper .meta{text-align:center;font-size:12px;color:#746a80;border-bottom:1px solid #d8c5ab;padding-bottom:10px}.paper p{white-space:pre-wrap;overflow-wrap:anywhere;margin:5px 0 16px}.paper footer{border-top:1px solid #ddd0b9;padding-top:12px;font-size:12px;color:#686071}.paper.design-simple{border:1px solid #bbb;background:white}.paper.design-japanese{border:8px double #a55164;background:#fffaf5}.paper.design-japanese h2,.paper.design-japanese h3{color:#903c55}.paper.design-mystic{background:#1a1535;color:#f5ebff;border-color:#b89bdf}.paper.design-mystic h2,.paper.design-mystic h3{color:#f3d99e}.paper.design-mystic .meta,.paper.design-mystic footer{color:#d5c6eb}.notice{font-size:12px;line-height:1.7;color:#d2c8df;margin-top:14px}.result-area{display:none}.result-area.show{display:block}.status{min-height:24px;color:#f0d392;font-size:13px;margin-top:10px}.links{text-align:center;margin:25px auto;color:#c6bdd9;font-size:12px}.privacy{font-size:12px;color:#ded6ed;background:#292748;border-radius:10px;padding:10px;margin-top:15px}#reportTitle{overflow-wrap:anywhere}@media(max-width:750px){.layout{grid-template-columns:1fr}.panel{padding:18px}.wrap{padding:12px 12px 40px}.two{grid-template-columns:1fr}.hero{padding:20px 3px}.paper{padding:14px}}@media print{@page{size:A4;margin:15mm}body{background:white;color:#111}.hero,.form-panel,.actions,.notice,.privacy,.links,.intro,.status{display:none!important}.wrap{max-width:none;padding:0}.layout{display:block}.panel{border:none;box-shadow:none;padding:0;background:white}.result-area{display:block!important}.paper{box-shadow:none;break-inside:avoid;print-color-adjust:exact;-webkit-print-color-adjust:exact}.paper section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero"><div class="ornament" aria-hidden="true">✦ ☾ ✦</div><div class="eyebrow">FORTUNE MESSAGE</div><h1>星月の占い鑑定室</h1><p class="lead">心の声に耳をすませて。あなたのための、小さな道しるべ。</p><span class="badge">無料お試し鑑定 · 登録不要</span></header>
+<div class="layout">
+<section class="panel form-panel" aria-labelledby="form-heading"><h2 id="form-heading">✧ 鑑定のお申し込み</h2><p class="hint">ご相談を入力すると、その場で鑑定書を表示します。<strong>文章は定型文を組み合わせた参考メッセージです（AI鑑定ではありません）。</strong></p>
+<form id="fortuneForm">
+<label for="name">お名前・ニックネーム（任意）</label><input id="name" maxlength="40" placeholder="例：花子">
+<label for="genre">相談ジャンル</label><select id="genre"><option>恋愛</option><option>復縁</option><option>仕事</option><option>人間関係</option><option>金運</option><option>将来の不安</option><option>その他</option></select>
+<label for="question">相談内容 <span class="hint">（必須・10文字以上）</span></label><textarea id="question" required minlength="10" maxlength="1500" placeholder="今、いちばん気になっていることを教えてください。"></textarea>
+<label for="situation">現在の状況（任意）</label><textarea id="situation" maxlength="1000" placeholder="これまでの経緯、今の気持ちなど"></textarea>
+<label for="relation">相手との関係性（該当する場合）</label><input id="relation" maxlength="120" placeholder="例：片思い中、元恋人、同僚">
+<div class="two"><div><label for="tone">鑑定のトーン</label><select id="tone"><option>やさしい</option><option>前向き</option><option>落ち着いた</option><option>神秘的</option><option>はっきりめ</option></select></div><div><label for="length">文章の長さ</label><select id="length"><option>短め</option><option selected>標準</option><option>長め</option></select></div></div>
+<label for="design">鑑定書のデザイン</label><select id="design"><option value="simple">シンプル</option><option value="japanese">和風</option><option value="mystic" selected>神秘的</option><option value="luxury">高級感</option></select>
+<div class="actions"><button type="submit" class="btn">✦ 無料鑑定をはじめる</button><button type="reset" class="btn secondary">入力をクリア</button></div>
+</form><p class="privacy">🔒 入力内容は、この無料版ではブラウザ内で処理され、運営者のサーバーには送信されません。氏名・住所・電話番号などの個人情報は入力しないでください。共有端末では画面表示にご注意ください。</p>
+</section>
+<section class="panel" aria-labelledby="result-heading"><h2 id="result-heading">☾ あなたの鑑定書</h2><div id="placeholder" class="intro">ここに鑑定結果が表示されます。<br>左のフォームにご相談を入力し、「無料鑑定をはじめる」を押してください。<br><br>鑑定書はコピーでき、印刷画面からPDF保存もできます。</div>
+<div id="result" class="result-area" aria-live="polite"><article id="paper" class="paper design-mystic"><div class="seal">✦ ☾ ✦</div><h2 id="reportTitle"></h2><div id="reportMeta" class="meta"></div><section><h3>ご相談の要約</h3><p id="summary"></p></section><section><h3>現在の状況の読み解き</h3><p id="reading"></p></section><section><h3>鑑定メッセージ</h3><p id="finding"></p></section><section><h3>これからのアドバイス</h3><p id="advice"></p></section><section><h3>あなたへの最後のメッセージ</h3><p id="closing"></p></section><footer>この鑑定書は気持ちの整理をお手伝いする娯楽・自己対話のためのメッセージです。未来の出来事や第三者の気持ちを確実に示すものではありません。医療・法律・投資などの専門的な判断には使用しないでください。</footer></article>
+<div class="actions"><button type="button" class="btn" id="copy">鑑定書をコピー</button><button type="button" class="btn secondary" id="print">印刷・PDF保存</button></div><div id="status" class="status" role="status"></div></div>
+<p class="notice">※不安を煽る言い回しや確実な結果の約束はしません。悩みが深いときは、信頼できる方や専門窓口への相談も大切です。</p></section>
+</div><div class="links">© 星月の占い鑑定室 · 自分らしい選択のための占い</div>
+</main>
+<script>
+'use strict';
+// この版は100%ブラウザ内で動くテンプレート方式です。
+// 【将来AI APIを接続する場合】ブラウザに秘密鍵を置かず、別途サーバー側のAPIを用意してください。
+// 利用者の明示的な同意、プライバシーポリシー、入力内容の保存方針、安全性チェックが必要です。
+const $=id=>document.getElementById(id);
+const themes={
+'恋愛':{title:'恋の気持ちを見つめる鑑定書',read:'相手の反応を気にするほど、自分の本音が見えにくくなることもあります。',find:'心の距離は、相手の気持ちを決めつけるより、少しずつ交わす会話や行動から確かめることが大切です。',advice:'まずは自分が心地よいと感じる関わり方を一つ選び、無理のないペースで言葉にしてみましょう。'},
+'復縁':{title:'過去と未来をつなぐ鑑定書',read:'忘れられない思いには、それだけ大切な時間があったのかもしれません。',find:'再び関係が始まるかどうかは一人では決められませんが、過去を振り返ることで次の選択が見えやすくなります。',advice:'連絡の前に、何を伝えたいか、互いの境界線を尊重できるかを整理してみましょう。'},
+'仕事':{title:'働き方の道しるべ鑑定書',read:'責任や期待が重なると、選択肢が一つしかないように感じることがあります。',find:'小さな得意分野や続けてきた工夫が、これからの働き方を考える手がかりになるかもしれません。',advice:'今週できる行動を一つだけ決め、必要なら上司や信頼できる人と状況を共有してみましょう。'},
+'人間関係':{title:'心地よいつながりの鑑定書',read:'人との距離感に迷うのは、自分も相手も大切にしたい気持ちの表れかもしれません。',find:'すべての人に理解してもらう必要はありません。安心できる関係を少しずつ育てていくことに意味があります。',advice:'相手の気持ちを推測だけで決めず、自分ができることとできないことを穏やかに伝えてみましょう。'},
+'金運':{title:'お金との向き合い方鑑定書',read:'先行きが見えないときほど、目の前の数字が大きな不安に感じられる場合があります。',find:'この占いで収入や相場の未来を予測することはできません。安心につながるのは、お金の使い道と優先順位を整理することかもしれません。',advice:'まずは生活に必要なお金と、楽しみに使えるお金を分けて眺めてみましょう。個別の投資判断は専門家などに確認してください。'},
+'将来の不安':{title:'これからの希望を探す鑑定書',read:'まだ起きていないことを考え続けると、今日できることが見えづらくなることがあります。',find:'未来が一つに決まっているわけではありません。今ある選択肢を丁寧に見直すことで、気持ちが少し整うかもしれません。',advice:'気になっていることを「今日できること」と「今は決めなくてよいこと」に分けてみましょう。'},
+'その他':{title:'あなたの心に寄り添う鑑定書',read:'言葉にしづらい悩みも、整理して書いてみるだけで新しい見方が生まれることがあります。',find:'今すぐ答えを出す必要はありません。自分の気持ちに名前をつけることから、次の一歩が見えてくるかもしれません。',advice:'できることを一つだけ選び、無理のない形で試してみましょう。'}
+};
+const tones={
+'やさしい':{a:'焦らなくても大丈夫です。',b:'あなたの気持ちも大切にしてください。'},
+'前向き':{a:'小さな前進も、立派な一歩です。',b:'自分にできることから、明るい可能性を育てましょう。'},
+'落ち着いた':{a:'結論を急がず、状況を一つずつ整理してみましょう。',b:'確かめられることから進める姿勢が助けになるでしょう。'},
+'神秘的':{a:'夜空の星を眺めるように、少し広い視点から心を見つめてみてください。',b:'次の道を照らす灯りは、日々の小さな選択の中にあるのかもしれません。'},
+'はっきりめ':{a:'今、決めつけることは避けましょう。',b:'相手や未来を変えようとするより、自分の行動を具体的に選ぶことが大切です。'}
+};
+const extras={
+'恋愛':['気持ちを伝えるなら、相手の都合や返事を尊重できる形がよさそうです。','誰かを思う時間と同じくらい、自分が楽しめる時間にも目を向けてください。'],
+'復縁':['関係をやり直すことだけを目標にせず、以前の課題がどう変わったかも考えてみましょう。','返事がない場合も相手の意思として尊重し、自分の生活を大事にしましょう。'],
+'仕事':['やることを書き出し、重要度と期限を分けると負担が見えやすくなります。','十分に休む時間も、仕事を続けるための大切な準備です。'],
+'人間関係':['一度の会話で分かり合えなくても、落ち着いて話す機会を選べます。','断ることは、相手を否定することとは違います。'],
+'金運':['衝動的な決断を避け、必要なら家計の記録をつけることも役立ちます。','将来の見通しは一つの結果に決めつけず、複数の備えを考えてみましょう。'],
+'将来の不安':['不安が強い日は、情報から少し離れる時間を設けてもよいでしょう。','一人で抱えず、信頼できる人に気持ちを話す選択肢もあります。'],
+'その他':['紙に「心配なこと」と「大切にしたいこと」を分けて書くのも一案です。','答えを急がない時間が、別の見方をもたらす場合もあります。']
+};
+function trimText(s,n){s=s.trim().replace(/\s+/g,' ');return s.length>n?s.slice(0,n)+'…':s;}
+function assign(id,value){$(id).textContent=value;}
+function makeReport(){
+const genre=$('genre').value,tone=$('tone').value,length=$('length').value,question=$('question').value.trim(),situation=$('situation').value.trim(),relation=$('relation').value.trim(),name=$('name').value.trim();
+if(question.length<10){$('question').setCustomValidity('相談内容は10文字以上入力してください。');$('question').reportValidity();return;}$('question').setCustomValidity('');
+const t=themes[genre],v=tones[tone],person=name?trimText(name,40)+'さん':'あなた';
+const context=situation?'現在の状況として「'+trimText(situation,145)+'」と教えていただきました。':'';
+const link=relation?'お相手との関係は「'+trimText(relation,100)+'」とのことですね。':'';
+let summary='ご相談のテーマは「'+genre+'」です。\n'+trimText(question,380)+(context?'\n'+context:'')+(link?'\n'+link:'');
+let reading=t.read+' '+v.a+(situation?' 書いてくださった状況から、今の気持ちとこれから望むことを分けて整理するのがよさそうです。':'');
+let finding=t.find+' '+v.b;
+let advice=t.advice;
+let closing=person+'へ。答えを急がず、ご自身の心と現実の状況の両方を大切にしてください。あなたが納得できる一歩を選べますように。';
+if(length!=='短め'){reading+='\n今は「変えられること」と「自分だけでは変えられないこと」を見分ける時間にしてもよいでしょう。';advice+='\n'+extras[genre][0];}
+if(length==='長め'){finding+='\n物事の流れを一つの言葉で言い切ることはできません。気持ちが揺れるときは、少し時間をおいて見直すことにも価値があります。';advice+='\n'+extras[genre][1];closing+='\n今日ここで悩みを言葉にしたことも、ひとつの前進です。ゆっくりでかまいません。';}
+assign('reportTitle',t.title);assign('reportMeta',person+'のためのメッセージ · '+new Date().toLocaleDateString('ja-JP')+' · '+tone+'な語り口');
+assign('summary',summary);assign('reading',reading);assign('finding',finding);assign('advice',advice);assign('closing',closing);
+$('paper').className='paper design-'+$('design').value;$('placeholder').style.display='none';$('result').classList.add('show');$('status').textContent='鑑定書を作成しました。';
+if(window.innerWidth<751)$('result-heading').scrollIntoView({behavior:'smooth',block:'start'});
+}
+$('fortuneForm').addEventListener('submit',e=>{e.preventDefault();makeReport();});
+$('question').addEventListener('input',()=> $('question').setCustomValidity(''));
+$('fortuneForm').addEventListener('reset',()=>{requestAnimationFrame(()=>{$('result').classList.remove('show');$('placeholder').style.display='block';$('status').textContent='';});});
+$('copy').addEventListener('click',async()=>{
+const headings=[['鑑定書タイトル','reportTitle'],['','reportMeta'],['ご相談の要約','summary'],['現在の状況の読み解き','reading'],['鑑定メッセージ','finding'],['これからのアドバイス','advice'],['あなたへの最後のメッセージ','closing']];
+const contents=headings.map(([heading,id])=>(heading?heading+'\n':'')+$(id).textContent).join('\n\n');
+try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(contents);}else{const ta=document.createElement('textarea');ta.value=contents;document.body.appendChild(ta);ta.select();if(!document.execCommand('copy'))throw Error('copy failed');ta.remove();}$('status').textContent='鑑定書をコピーしました。';}
+catch(e){$('status').textContent='コピーができませんでした。本文を長押し・選択してコピーしてください。';}
+});
+$('print').addEventListener('click',()=>window.print());
+</script>
+</body>
+</html>
